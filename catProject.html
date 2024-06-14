@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--header Section-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat App</title>
+</head>
+
+<!--Body Section-->
+
+<body>
+    <main>
+        <h1>CatPhotoApp</h1>
+        <h2>Cat Photos</h2>
+        <p>See more cat Photos in our gallery.</p>
+
+        <!--target opens the website in other tab ... _blank opens link in new tab.-->
+        <a href="https://freecatphotoapp.com" target="_blank">Cat Photo Link!</a>
+    </main>
+
+    <section>
+        
+        <!--We can make an image into a link by covering it with anchor tag.-->
+        <a href="https://freecatphotoapp.com" target="_blank">
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                alt="Cat Photo from Free Code Camp.">
+            <p>This is me <a href="https://freecatphotoapp.com">Zaid Amjad</a></p>
+        </a>
+
+    </section>
+    
+    <section> 
+        <h2>Cat Lists</h2>
+        <h3>Things Cats Love:</h3>
+        <!--Unordered list to show items in bullets dots-->
+        <ul>
+            <li>milk</li>
+            <li>cheese</li>
+            <li>balls</li>
+        </ul>
+
+        <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="Lasagna on the plate.">
+        <figcaption>Cats <em>Emphasis </em>love lasagna.</figcaption>
+        </figure>
+
+        <h3>Top 3 things cats hate:</h3>
+        <!--Ordered list to show item in numbering-->
+        <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+        </ol>
+        <figure>
+
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Cat photo...">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <input type="text" name="catphotourl" placeholder="cat photo url" required>
+            <input type="password">
+            <input type="file">
+            <button type="submit">Submit</button>
+    
+            <fieldset>
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                <label><input checked type="radio" id="indoor" value="indoor" name="meal"> Indoor </label>
+                <label><input type="radio" id="outdoor" value="outdoor" name="meal"> Outdoor </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Whats your cat's Personality?</legend>
+                <input checked type="checkbox" id="loving" value="loving" name="personality" value="loving">
+                <Label for="loving">Loving</Label>
+
+                <input type="checkbox" id="lazy" value="lazy" name="personality" value="lazy">
+                <label for="lazy">Lazy</label>
+
+                <input type="checkbox" id="energetic" name="personality" value="energetic">
+                <label for="energetic">Energetic</label>
+            </fieldset>
+            
+
+        </form>
+    </section>
+
+    <!-- 
+    <h2>2nd heading</h2>
+    <h3>3rd Heading</h3>
+    <h4>4th Heading</h4>
+    <h5>5th Heading</h5>
+    <h6>6th Heading</h6>
+    -->
+    <footer>
+        <p>Contact: <a href="https://www.freecodecamp.org">zaidamjadse@gmail.com</a></p>
+    </footer>
+</body>
+
+
+</html>
