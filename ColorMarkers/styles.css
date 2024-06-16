@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+}
+
+.marker{
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+
+/* USED LINEAR GRADIENT FOR MIXING COLORS ITS PARAMENTERS ARE (GRADIENT DIRECTIOIN, COLOR1,COLOR2,...) IF GRADIENT DIRECTION 0 THEN REMOVE IT*/ 
+/* USED RGBA COLOR TECHNIQUE ITS PARAMENTER ARE (RED,GREEN,BLUE,ALPHA CHANNEL) ALPHA CHANNEL USED FOR OPACITY*/
+.red{
+    box-shadow: 0 0 20px 0 rgba(95, 14, 14, 0.8);
+    background: linear-gradient( rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+}
+
+/* USED HEX COLOR TECHNIQUE ITS FORMAT IS: #REDGREENBLUEOPACITY */
+.green{
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+}
+
+/* USED HSLA TECHNIQUE ITS PARAMENTERS ARE (HUE, SATURATION, LIGHTNESS, ALPHA CHANNEL)  ALPHA CHANNEL USED FOR OPACITY */
+.blue{
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+    background: linear-gradient(hsl(186,76%,16%), hsl(223,90%,60%), hsl(240, 56%, 42%));
+}
+
+/* CONTAINER FOR ALL MARKER DIV */
+.container{
+    background-color: rgb(255,255,255);
+    padding: 10px 0px;
+}
+
+.sleeve{
+    height: 25px;
+    width: 110px;
+    background-color: rgb(255,255,255,0.5);
+    border-left: 5px double rgba(0,0,0,75%);
+}
+
+.cap{
+    width: 60px;
+    height: 25px;
+}
+
+/* AS DIV IS A CONTAINER... SO TO MAKE TWO DIV INLINE WE MAKE THIS */
+.cap, .sleeve{
+    display: inline-block;
+}
