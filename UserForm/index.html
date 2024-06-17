@@ -11,7 +11,8 @@
     <p>Please fill out this form with the required information</p>
 
     <form action="https://register-demo.freecodecamp.org" method="POST">
-        
+
+        <!-- FIELDSET (RECTANGLE) FOR WRITTEN DATA -->
         <fieldset>
             <label for="first-name">Enter your First Name: <input required id="first-name" type="text" name="first"></label>
             <label for="last-name">Enter Your Last Name: <input required id="last-name" type="text" name="last"></label>
@@ -19,12 +20,14 @@
             <label for="new-password">Create a new Password: <input required id="new-password" type="password" pattern="[a-z0-5]{8,}" name="password"></label>
         </fieldset>
 
+        <!-- FIELDSET FOR RADIO BUTTONS -->
         <fieldset>
             <legend>Account type (required)</legend>
             <label for="personal"><input type="radio" class="inline" id="personal" name="account-type" checked> Personal</label>
             <label for="business"><input type="radio" class="inline" id="business" name="account-type"> Business</label>
         </fieldset>
 
+        <!-- FIELDSET FOR OTHER INPUTS -->
         <fieldset>
             <label for="profile-picture">Add your Profile Picture: <input type="file" name="profile-picture" id="profile-picture"></label>
             <label for="age">Input your Age (years): <input type="number" min="13" max="120" id="age" name="age"></label>

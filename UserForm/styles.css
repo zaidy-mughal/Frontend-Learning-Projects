@@ -21,7 +21,9 @@ form{
     margin: 0 auto;
     max-width: 500px;
     min-width: 300px;
+    /* vw or vh: VIEWPORT HEIGHT OR WIDTH USED TO MAKE RESPONSIVE */
     width: 60vw;
+    /* em: BASED ON THE FONT SIZE OF THE PARENT ELEMENT */
     padding-bottom: 2em;
 }
 
@@ -32,6 +34,7 @@ fieldset{
     border-bottom: 3px solid #3b3b4f;
 }
 
+/* PSEUDO SELECTOR TO SELECT SPECIFIC PROPERTY */
 fieldset:last-of-type{
     border: 0px;
 }
@@ -39,11 +42,13 @@ fieldset:last-of-type{
 input,textarea,select{
     width: 100%;
     margin: 10px 0 0 0;
+    /* em: BASED ON THE FONT SIZE OF THE PARENT ELEMENT */
     min-height: 2em;
 }
 
 .inline{
     width: unset;
+    /* em: BASED ON THE FONT SIZE OF THE PARENT ELEMENT */
     margin: 0 0.5em 0 0;
     vertical-align: middle;
 }
@@ -54,10 +59,14 @@ input,textarea{
     color: #ffffff;
 }
 
+/* ATTRIBUTE SELECTOR TO SELECT ELEMENTS WITH SIMILER ATTRIBUTE */
 input[type="submit"]{
     display: block;
     width: 60%;
     margin: 0 auto;
+
+    /* rem: BASED ON THE FONT SIZE OF THE ROOT ELEMENT */
+    /* em: BASED ON THE FONT SIZE OF THE PARENT ELEMENT */
     height: 2em;
     font-size: 1.1rem;
     background-color: 3b3b4f;
