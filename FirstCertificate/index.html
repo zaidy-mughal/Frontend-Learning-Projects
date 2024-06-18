@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title></title>
+    </head>
+    <body>
+        <section>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for being here. Your feedback is valuable and will help us improve our services and support your fitness journey.</p>    
+        </section>
+
+        <form id="survey-form">
+            <div class="userinfo">
+                <label id="name-label" for="name">Name
+                    <input id="name" required type="text" placeholder="Babar Azam">
+                </label>
+    
+                <label id="email-label" for="email">Email
+                    <input id="email" required type="email" placeholder="abc@gmail.com">
+                </label>
+    
+                <label id="number-label" for="number">Your Age
+                    <input id="number" type="number" min="18" max="55" placeholder="25">            
+                </label>
+    
+                <label for="dropdown">How much time you spend in gym?
+                    <select name="dropdown" id="dropdown">
+                        <option value="Select an option">(Select)</option>
+                        <option value="One">One hours</option>
+                        <option value="Two">Two hours</option>
+                    </select>
+                </label>
+                
+            </div>
+            
+
+            <div class="radiobutton">
+                <!-- TO ENSURE ONE SELECTION USE SAME NAME IN RADIO BUTTONS -->
+                <label>How often do you visit gym?</label>
+                <label for="daily">
+                    <input type="radio" value="daily" name="visit" id="daily" checked>
+                    Almost Daily.
+                </label>
+                <label for="weekly">
+                    <input type="radio" value="weekly" name="visit" id="weekly">
+                    1-2 times in a week.
+                </label>   
+                <label for="monthly">
+                    <input type="radio" value="monthly" name="visit" id="monthly">
+                    3-5 times in a months.
+                </label>  
+            </div>
+
+            
+            <div class="checkbox">
+                <label>What type of workouts do you primarily engage in?</label>
+
+                <label>
+                    <input type="checkbox" value="cardio" name="checkbox1">
+                    Cardio (e.g., running, cycling)
+                </label>
+                <label>
+                    <input type="checkbox" value="strength" name="checkbox1">
+                    Strength training (e.g., weightlifting)
+                </label>
+                <label>
+                    <input type="checkbox" value="exercise" name="checkbox1">
+                    Flexibility exercises (e.g., yoga, stretching)
+                </label>
+                <label>
+                    <input type="checkbox" value="classes" name="checkbox1">
+                    Group classes (e.g., aerobics, spinning)
+                </label>
+                <label>
+                    <input type="checkbox" value="boxing" name="checkbox1">
+                    Boxing
+                </label>
+
+                <label class="lastlabel">Any suggestions for improving our gym?<textarea name="other" rows="4" cols="40"></textarea></label>
+            </div>
+
+            <div class="submitbutton">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+
+        </form>
+    </body>
+
+</html>
+

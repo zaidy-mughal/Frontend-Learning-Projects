@@ -1,0 +1,82 @@
+body{
+    font-family: sans-serif, Arial, Helvetica;
+    background-image: url(gym.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    color:bisque;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+h1,p{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+form, section{
+    margin: 0 auto;
+    min-width: 250px;
+    max-width: 600px;
+    width: 60vw;
+}
+
+.userinfo input, select, textarea{
+    display: block;
+    width: 100%;
+    min-height: 3rem;
+    margin: 10px 0 30px 0;
+    box-sizing: border-box;
+    background-color:dimgray;
+    font-size: 1.3em;
+    
+}
+
+input::placeholder{
+    color:rgb(54, 70, 70);
+    padding-left: 5px;
+}
+
+
+label,textarea{
+    display: block;
+}
+
+
+
+.checkbox input,.radiobutton input{
+    display: inline;
+    size: 1.5em;
+}
+
+.userinfo, .radiobutton{
+    margin-bottom: 70px;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 100%;
+    margin: auto;
+    min-height: 3.5rem;
+    background-color: rgb(30, 33, 34);
+    color: white;
+    border-color: black;
+}
+
+.submitbutton{
+    padding-bottom: 50px;
+}
+
+
+input[type="checkbox"], input[type="radio"] {
+    width: 20px; /* Set width of custom checkbox */
+    height: 20px; /* Set height of custom checkbox */
+    border: 2px solid #333; /* Border style */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.lastlabel{
+    margin-top: 30px;
+}
