@@ -1,3 +1,4 @@
+/* SETTING FOR WHOLE PAGE */
 body{
     font-family: sans-serif, Arial, Helvetica;
     background-image: url(gym.jpg);
@@ -16,6 +17,7 @@ p{
     text-align: justify;
 }
 
+/* SET RESPONSIVE WIDTH OF FORM */
 form, section{
     margin: 0 auto;
     min-width: 250px;
@@ -23,6 +25,7 @@ form, section{
     width: 60vw;
 }
 
+/* MODIFYING FIELDS */
 .userinfo input, select, textarea{
     display: block;
     width: 100%;
@@ -34,6 +37,7 @@ form, section{
     
 }
 
+/* MODIFYING PLACEHOLDER */
 input::placeholder{
     color:rgb(54, 70, 70);
     padding-left: 5px;
@@ -45,7 +49,6 @@ label,textarea{
 }
 
 
-
 .checkbox input,.radiobutton input{
     display: inline;
     size: 1.5em;
@@ -55,6 +58,7 @@ label,textarea{
     margin-bottom: 70px;
 }
 
+/* STYLING SUBMIT BUTTON */
 input[type="submit"]{
     display: block;
     width: 100%;
