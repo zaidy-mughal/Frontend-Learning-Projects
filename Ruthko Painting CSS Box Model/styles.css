@@ -4,6 +4,7 @@
     border-width: 50px;
     width: 500px;
     padding: 50px;
+    /* MARGIN TOP AND BOTTOM IS 20PX AND LEFT AND RIGHT AUTO */
     margin: 20px auto;
 }
 
@@ -11,7 +12,9 @@
     width: 500px;
     height: 600px;
     background-color: #4d0f00;
+    /* ADDING 1 PIXEL OF PADDING TO THE TOP, BOTTOM, LEFT, AND RIGHT OF THE CANVAS CHANGED ITS DIMENSIONS TO 502 PIXELS X 602 PIXELS. REPLACE THE PADDING PROPERTY WITH OVERFLOW SET TO HIDDEN - CHANGING THE CANVAS BACK TO ITS ORIGINAL DIMENSIONS. */
     overflow: hidden;
+    /* BLUR PROPERTY TO BLUR DIV USING FILTER */
     filter: blur(2px);
 }
 
@@ -20,8 +23,10 @@
     width: 425px;
     height: 150px;
     margin: 20px auto;
+    /* SETTING THE DIMENTIONS OF SHADOW USING SHORTHAND */
     box-shadow: 0 0 3px 3px #efb762;
     border-radius: 10px;
+    /* TRANSFORM THE DIV INTO ROTATE PROPERTY INTO COUNTER CLOCKWISE WITH -IVE SIGN */
     transform: rotate(-0.6deg);
 }
 
@@ -32,7 +37,9 @@
     margin: auto;
     margin: 0 auto 20px;
     box-shadow: 0 0 3px 3px #8f0401;
+    /* BORDER RADIUS USING SHORTHAND : TOP.LEFT&BOTTOM.RIGHT  TOP.RIGHT&BOTTOM.LEFT */
     border-radius: 8px 10px;
+    /* TRANSFORM THE DIV INTO ROTATE PROPERTY INTO CLOCKWISE WITH +IVE SIGN */
     transform: rotate(0.4deg);
 }
 
@@ -46,6 +53,7 @@
     margin: auto;
     background-color: #b20403;
     box-shadow: 0 0 5px 5px #b20403;
+    /* BORDER RADIUS USING SHORTHAND : TOP.LEFT  TOP.RIGHT  BOTTOM.RIGHT  BOTTOM.LEFT */
     border-radius: 35px 28px 65px 15px;
     transform: rotate(-0.2deg);
 }
