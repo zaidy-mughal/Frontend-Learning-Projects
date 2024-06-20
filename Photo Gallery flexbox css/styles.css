@@ -2,22 +2,30 @@
     width: 100%;
     max-width: 350px;
     height: 300px;
+    /* IT DEFINES HOW OBJECT SHOULD BEHAVE. IN IMAGE CASE "COVER" FILLS THE IMAGE CONTAINER WHILE MAINTAINING ITS ASPECT RATIO BY CROPPING THE IMAGES. */
     object-fit: cover;
     border-radius: 10px;
 }
 
 .gallery{
+    /* DETEMINES THAT THE CONTAINER IS A FLEXBOX (ONE DIMENTIONAL LAYOUT) - THAT CAN CONTROL THE WAY ITEMS ARE SPACED OUT OR ALIGHNED WITHIN THE CONTAINER */
     display: flex;
+    /* FLEXBOX HAS MAIN AND CROSS AXIS. THE MAIN AXIS IS DEFINED BY FLEX-DIRECTION */
     flex-direction: row;
+    /* IT TELLS HOW YOUR FLEX ITEMS BEHAVE WHEN THE FLEX CONTAINER IS TOO SMALL */
     flex-wrap: wrap;
+    /* IT POSITIONS THE FLEX CONTENT ALONG MAIN AXIS */
     justify-content: center;
+    /* IT POSITIONS THE FLEX CONTENT ALONG CROSS AXIS */
     align-items: center;
+    /* SETS THE GAP BETWEEN ROWS AND COLUMS. ALSO KNOWN AS GUTTERS */
     gap: 10px;
     padding: 20px 10px;
     margin: 0 auto;
     max-width: 1400px;
 }
 
+/* PSEUDO SELECTOR */
 .gallery::after{
     content: "";
     width: 350px;
@@ -25,6 +33,7 @@
 
 .header{
     text-align: center;
+    /* CONVERT TEXT TO UPPERCASE */
     text-transform: uppercase;
     background-color: #0a0a23;
     color: #fff;
